@@ -1,0 +1,6 @@
+# Ignore binaries and objects
+.o
+/bin
+
+# Ignore macOS files
+.DS_STORE
