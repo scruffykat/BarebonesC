@@ -11,7 +11,7 @@ DEBUG=off
 ifeq ($(DEBUG), on)
 	CFLAGS +=-Wall -g
 else
-	CFLAGS += -O2
+	CFLAGS += -O2 -ffunction-sections
 endif
 
 # Internal File Scanning
@@ -39,5 +39,9 @@ run: $(EXEC)
 # Get rid of all those objects and binary files
 clean:
 	rm -f $(OBJ) $(OUTPUT)/$(EXEC)
+
+# Shorthands. May have to be removed if your makefile becomes too complex.
+r: run
+c: clean
 
 .PHONY: all clean run
