@@ -22,6 +22,7 @@ At the top of the makefile, you will see various variables to edit. Here is some
 | OUTPUT | bin | Name of output directory |
 
 ### Commands
+Use the following commands to easily interact with the build process. Also note that you can append `DEBUG=on` after the command to build with debug arguments automatically (Recommended during development and testing)
 
 ### Build 
 Builds the entire project
